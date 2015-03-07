@@ -5,7 +5,7 @@
 #include <string>
 
 
-namespace algorithm
+namespace utils
 {
    template<typename Iterator>
    void advance(Iterator& current, Iterator end,

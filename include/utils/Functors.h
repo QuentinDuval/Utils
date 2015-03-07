@@ -2,7 +2,7 @@
 #include <utility>
 
 
-namespace algorithm
+namespace utils
 {
    struct GetSecond
    {

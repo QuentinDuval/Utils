@@ -1,7 +1,7 @@
 #pragma once
 
 
-namespace algorithm
+namespace utils
 {
    struct NonCopyable
    {

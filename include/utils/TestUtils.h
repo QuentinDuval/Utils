@@ -2,7 +2,7 @@
 #include <assert.h>
 
 
-namespace algorithm
+namespace utils
 {
    template<typename ExceptionType>
    struct ExceptionChecker

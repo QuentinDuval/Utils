@@ -4,7 +4,7 @@
 #include <random>
 
 
-namespace algorithm
+namespace utils
 {
    template<typename FwdIter, typename ValueType, typename NextFct>
    void generate(FwdIter first, FwdIter last, ValueType const& val, NextFct next)

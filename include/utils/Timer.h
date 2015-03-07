@@ -3,7 +3,7 @@
 #include <iostream>
 
 
-namespace algorithm
+namespace utils
 {
    //-----------------------------------------------------------------------------
    // Allows timing the execution of a function, with perfect forwarding of the arguments

@@ -2,7 +2,7 @@
 #include <vector>
 
 
-namespace algorithm
+namespace utils
 {
    template<typename T>
    class Matrix
