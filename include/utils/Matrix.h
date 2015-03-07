@@ -1,4 +1,6 @@
 #pragma once
+
+#include "utils/Algorithms.h"
 #include <vector>
 
 
@@ -36,6 +38,13 @@ namespace utils
 
       T&       at(size_t x, size_t y)        { return m_data[x + m_width * y]; }
       T const& at(size_t x, size_t y) const  { return m_data[x + m_width * y]; }
+
+      friend bool operator==(Matrix const& lhs, Matrix const& rhs)
+      {
+         if (lhs.m_width != rhs.m_width) return false;
+         if (lhs.m_height != rhs.m_height) return false;
+         return equal(lhs.m_data, rhs.m_data);
+      }
 
    private:
       size_t m_width;
