@@ -1,6 +1,6 @@
 #pragma once
 
-#include "utils/Algorithms.h"
+#include <algorithm>
 #include <vector>
 
 
@@ -43,7 +43,7 @@ namespace utils
       {
          if (lhs.m_width != rhs.m_width) return false;
          if (lhs.m_height != rhs.m_height) return false;
-         return equal(lhs.m_data, rhs.m_data);
+         return std::equal(begin(lhs.m_data), end(lhs.m_data) , begin(rhs.m_data));
       }
 
    private:
